@@ -23,9 +23,12 @@ Si les trois sources tombent, la page affiche les derniers titres connus
 (conservés dans `data/news-cache.json`) avec leur heure et un message. Après un
 échec complet, le serveur attend 15 minutes avant de réessayer.
 
-> **À confirmer** : ces adresses, champs, limites et conditions d'usage n'ont
-> pas pu être testés pendant le développement (réseau bloqué). Lancez
-> `npm run test:live` avant la mise en production.
+> **État des tests réels (2 octobre 2026)** : France 24 et RFI répondent
+> (HTTP 200, 10 articles avec titre, lien, date et image). GNews répond mais
+> n'a pas été testé avec une clé. Conditions d'usage des trois sources à relire.
+>
+> Derrière un proxy d'entreprise ou de sandbox, Node 22 n'utilise pas
+> `HTTPS_PROXY` par défaut : lancer avec `NODE_USE_ENV_PROXY=1`.
 
 ## Tests
 

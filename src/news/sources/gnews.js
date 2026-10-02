@@ -1,6 +1,7 @@
 // Seconde source de secours : GNews (annuaire Public APIs, catégorie News).
 // Clé gratuite, lue dans GNEWS_API_KEY ; la source est ignorée si la clé est absente.
-// À CONFIRMER : adresse, nom des champs, limite gratuite et conditions (non testés, réseau bloqué).
+// Testé le 2026-10-02 sans clé : HTTP 400 {"errors":["You did not provide an API key."]}
+// (l'adresse répond). À confirmer avec une clé : nom des champs, limite gratuite, conditions.
 
 import { fetchJson } from '../http.js';
 import { makeArticle } from '../article.js';

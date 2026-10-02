@@ -1,5 +1,6 @@
 // Première source de secours : flux RSS de RFI en français. Sans clé.
-// À CONFIRMER : adresse du flux, champs, conditions d'usage (non testés, réseau bloqué).
+// Testé le 2026-10-02 : HTTP 200, 10 articles avec titre, lien, date et image.
+// À relire : conditions d'usage du flux (non trouvées).
 
 import { fetchRss } from '../rss.js';
 
