@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tableau de bord</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="dashboard">
+    <h1>Tableau de bord</h1>
+
+    <section class="card" id="news" aria-labelledby="news-title">
+      <header class="card-header">
+        <h2 id="news-title">Actus du jour</h2>
+        <span class="updated" id="news-updated">Chargement…</span>
+      </header>
+      <p class="notice" id="news-notice" hidden></p>
+      <ul class="news-list" id="news-list"></ul>
+      <footer class="attribution" id="news-attribution"></footer>
+    </section>
+  </main>
+  <script src="app.js" type="module"></script>
+</body>
+</html>

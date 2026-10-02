@@ -1,0 +1,20 @@
+{
+  "name": "tableau-de-bord-actus",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Tableau de bord avec les actus du jour (international, en français).",
+  "type": "module",
+  "engines": {
+    "node": ">=22.9"
+  },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env src/server.js",
+    "dev": "node --watch --env-file-if-exists=.env src/server.js",
+    "test": "node --test test/service.test.js test/rss.test.js",
+    "test:live": "node --env-file-if-exists=.env --test test/sources.live.test.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "fast-xml-parser": "^5.11.2"
+  }
+}
